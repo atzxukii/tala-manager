@@ -43,6 +43,17 @@ app.get('/api/health', (req, res) => {
   res.json({ success: true, message: '☕ Coffee Shop API is running', timestamp: new Date() });
 });
 
+// Route secrète pour le seed (à supprimer après usage)
+app.get('/api/seed-database-secret-123', async (req, res, next) => {
+  try {
+    const seedLogic = require('./seed/seed-logic'); // On va isoler la logique
+    await seedLogic();
+    res.json({ success: true, message: '🌱 Base de données remplie avec succès !' });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
 // Route 404
 app.use((req, res) => {
   res.status(404).json({ success: false, message: `Route ${req.originalUrl} introuvable` });
