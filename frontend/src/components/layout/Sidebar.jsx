@@ -62,7 +62,7 @@ export default function Sidebar({ open, onClose }) {
 
         {/* Footer sidebar */}
         <div className="px-6 py-4 border-t border-coffee/30">
-          <p className="text-xs text-coffee-pale">v1.0.0 — MVP</p>
+          <p className="text-[10px] text-coffee-pale uppercase tracking-widest font-bold">tala-manager beta 0.1</p>
         </div>
       </aside>
     </>
