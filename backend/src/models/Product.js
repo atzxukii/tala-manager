@@ -20,7 +20,6 @@ const productSchema = new mongoose.Schema(
     },
     minThreshold: {
       type: Number,
-      required: [true, 'Le seuil minimum est requis'],
       min: [0, 'Le seuil ne peut pas être négatif'],
       default: 0,
     },

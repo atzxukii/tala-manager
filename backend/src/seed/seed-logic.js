@@ -20,7 +20,7 @@ const seedLogic = async () => {
       { name: 'Maher', email: 'maher@tala.com', role: 'employee', password: 'password123', phone: '0542270782' },
       { name: 'Mejda', email: 'mejda@tala.com', role: 'employee', password: 'password123', phone: '0555583079' },
       { name: 'Melissa', email: 'melissa@tala.com', role: 'employee', password: 'password123', phone: '0556332178' },
-      { name: 'Riyad', email: 'riyad@tala.com', role: 'employee', password: 'password123', phone: '0791552040' },
+      { name: 'Ryad', email: 'ryad@tala.com', role: 'employee', password: 'password123', phone: '0791552040' },
     ];
     
     await Promise.all(userData.map(user => User.create(user)));

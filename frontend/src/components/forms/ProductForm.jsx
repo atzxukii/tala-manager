@@ -59,8 +59,8 @@ export default function ProductForm({ initial, onSubmit, onCancel, loading }) {
             placeholder="0" value={form.quantity} onChange={handle} />
         </div>
         <div className="form-group">
-          <label className="label" htmlFor="product-threshold">Seuil minimum *</label>
-          <input id="product-threshold" name="minThreshold" type="number" min="0" className="input" required
+          <label className="label" htmlFor="product-threshold">Seuil minimum</label>
+          <input id="product-threshold" name="minThreshold" type="number" min="0" className="input"
             placeholder="0" value={form.minThreshold} onChange={handle} />
         </div>
       </div>
